@@ -18,7 +18,7 @@ class MyThread2 extends Thread{
         }
     }
 }
-public class Threads {
+public class Thread_Using_extendsKeyword {
     public static void main(String[] args) {
         MyThread1 m1 = new MyThread1();
         m1.start();
