@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Switch_case {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your Age : ");
+        System.out.print("Enter your Age : ");
         int age = sc.nextInt();
 
 
