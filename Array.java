@@ -1,10 +1,11 @@
+import java.util.Arrays;
 public class Array {
     public static void main(String[] args) {
         /* Classroom of 500 students - You have to store marks of these 500 students
         You have 2 options:
         1. Create 500 variables
         2. Use Arrays (recommended)
-        */
+        
         // There are three main ways to create an array in Java.
 
         // 1. Declaration and memory allocation.
@@ -38,5 +39,11 @@ public class Array {
         for(int element : Marks){
             System.out.println(element);
         }
+        
+        // Displaying the array using toString method
+        
+        int [] nums = {3,4,5,6,7,9};
+        System.out.println(Arrays.toString(nums));
+        */
     }
 }
