@@ -6,7 +6,7 @@ public class Binary_Search {
         while(start <= end){
             // Find the middle element
             // int mid = (start + end)/2;
-            int mid = start + (end-start)/2;
+            int mid = start + ((end-start)>>1);
             if (target < arr[mid]){
                 end = mid-1;
             }
