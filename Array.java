@@ -45,5 +45,7 @@ public class Array {
         int [] nums = {3,4,5,6,7,9};
         System.out.println(Arrays.toString(nums));
         */
+        int [] nums = {3,4,5,6,7,9};
+        System.out.println(Arrays.toString(nums));
     }
 }
