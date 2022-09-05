@@ -4,7 +4,7 @@ public class OrderAgnosticBS {
         int end = arr.length - 1;
 
         // find wheather the array is sorted in ascending or descending
-        boolean isAsc = arr[start] < arr[end];
+        boolean isAscending = arr[start] < arr[end];
 
         while(start <= end){
             // Find the middle element
@@ -14,7 +14,7 @@ public class OrderAgnosticBS {
             if (arr[mid] == target){
                 return mid;
             }
-            if(isAsc){
+            if(isAscending){
                 if (target < arr[mid]){
                     end = mid-1;
                 }

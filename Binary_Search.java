@@ -1,4 +1,7 @@
 public class Binary_Search {
+
+    // It takes the middle element of the sorted array, and then search the target element on either side.
+
     static int binarySearch(int[]arr, int target){
         int start = 0;
         int end = arr.length - 1;
@@ -6,7 +9,7 @@ public class Binary_Search {
         while(start <= end){
             // Find the middle element
             // int mid = (start + end)/2;
-            int mid = start + ((end-start)>>1);
+            int mid = start + ((end-start)/2);  // also written as : ((end - start)>>1);
             if (target < arr[mid]){
                 end = mid-1;
             }
@@ -14,6 +17,7 @@ public class Binary_Search {
                 start = mid + 1;
             }
             else{
+                // Ans here
                 return mid;
             }
         }
