@@ -1,4 +1,4 @@
-public class CP_Ceilling_of_a_Number {
+public class cp_floor_of_a_number {
     /* return the index of smallest no. >= target */
     static int binarySearch1(int[] arr, int target){
         int start = 0;
@@ -15,7 +15,7 @@ public class CP_Ceilling_of_a_Number {
                 return mid;
             }
         }
-        return start;
+        return end;
     }
 
     public static void main(String[] args) {
