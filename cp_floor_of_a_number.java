@@ -3,6 +3,7 @@ public class cp_floor_of_a_number {
     static int binarySearch1(int[] arr, int target){
         int start = 0;
         int end = arr.length - 1;
+        
         while(start <= end){
             int mid = start + ((end-start)/2);
             if (target < arr[mid]){
