@@ -2,9 +2,14 @@
 // ques from gfg.
 // Binary Search used
 
+import java.util.Scanner;
 public class CP_Infinite_Array {
+    private static int temp;
     public static void main(String[] args) {
-        
+        int [] arr = {3,4,5,6,9,10,13,17,19,21,24,28,29,32,37,56,78,90,432};
+        Scanner sc = new Scanner(System.in);
+        int target = sc.nextInt();
+        System.out.println(ans(arr, target));
     }
     static int ans(int[] arr, int target){
         // First find the Range
@@ -15,10 +20,13 @@ public class CP_Infinite_Array {
         // Condition for the target to lie in the range:
 
         while(target > arr[end]){
-            int newStart = end + 1;
+            int temp = end + 1;  // This is the new Start.
             // end = previous end + size of box * 2;
-            int newEnd = 
+            // Size of Box = (end - start + 1);
+            end = end + (end - start + 1) * 2;
+            start = temp;
         }
+        return binarySearch(arr, target, start, end);
     }
     static int binarySearch(int[]arr, int target, int start, int end){
         
