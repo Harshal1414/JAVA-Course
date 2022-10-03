@@ -9,14 +9,14 @@ public class Break_continue {
             }
         }
 
-        // for(int i=0; i<5; i++){
-        //     if (i==3){
-        //         System.out.println("3 will execute till \"continue\" only.");
-        //         continue;
-        //     }
-        //         System.out.println(i);
-        //         System.out.println("Chalte raho");
-        // }
+        for(int i=0; i<5; i++){
+            if (i==3){
+                System.out.println("3 will execute till \"continue\" only.");
+                continue;
+            }
+                System.out.println(i);
+                System.out.println("Chalte raho");
+        }
 
     }
 }
