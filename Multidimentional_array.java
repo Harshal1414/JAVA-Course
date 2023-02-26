@@ -20,8 +20,8 @@ public class Multidimentional_array {
         // System.out.println(flats[0][2]);
         for(int i=0; i<flats.length;i++){
             for(int j=0; j<flats[i].length;j++){   // 2 loops for 2D Array, 3 loops for 3D array and so on.
-            System.out.print(flats[i][j]);
-            System.out.print(" ");
+                System.out.print(flats[i][j]);
+                System.out.print(" ");
             }
             System.out.println(" ");
         }
